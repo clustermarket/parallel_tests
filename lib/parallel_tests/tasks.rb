@@ -95,7 +95,7 @@ module ParallelTests
       end
 
       def schema_type_based_on_rails_version
-        if rails_61_or_greater? || schema_format_based_on_rails_version == :ruby
+        if schema_format_based_on_rails_version == :ruby
           "schema"
         else
           "structure"
